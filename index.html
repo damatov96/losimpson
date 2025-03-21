@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Los Simpson</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--ACA COLOCO MI CSS-->
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <h1>The Simpsons</h1>
+    <div class="container-flui sinMargen">
+      <!--ACA COLOCO MI MENU-->
+
+      <div class="row">
+        <div class="col-12" style="border: solid 3px black;">
+            <img src="images/SLIDER.webp" alt="Los Sipmson" class="w-100">
+        </div>
+      <!--ACA COLOCO MI MENU-->  
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(0, 0, 0); border-radius: 0 50px;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/ICONO DONA.png" alt="Dona">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <button style="background-color: #db1919;" class="nav-item">
+                    <a style="color: #fff;" class="nav-link" href="#">Home</a>
+                    <audio id="audioId" src="audio/ay-caramba.mp3"  onmouseover="playSound('audioGaleria')">
+
+                    </audio>
+                  </button>
+                  <button style="background-color: #db1919;" class="nav-item">
+                    <a style="color: white;" class="nav-link" href="#">Personajes</a>
+                  </button>
+                  <button style="background-color: #db1919;" class="nav-item">
+                    <a style="color: white;" style="color: white;" class="nav-link" href="#">Temporadas</a>
+                  </button>
+                  <button style="background-color: #D91100;" class="nav-item">
+                    <a style="color: white;" class="nav-link" href="#">Galeria</a>
+                  </button>
+                </ul>
+              </div>
+              <audio src="audio/intro.mp3" controls></audio>
+            </div>
+          </nav>
+        </div>
+        <br>
+        </div>
+        <div style="background-image: url(images/Portada2.jpg); padding: 10px;" class="row">
+          <div class="col-4" style="height: auto;">
+            <img style="border: solid 5px black" src="images/CREADORES.jpg" alt="Shop" width="100%" height="350px">
+            <h3 style="text-align: center;">Shop</h3>
+        </div>
+
+            
+            <div class="col-4" style="height: auto;">
+                <img style="border: solid 5px black" src="images/SHOP.png" alt="Shop" width="100%" height="350px">
+                <h3 style="text-align: center;">Shop</h3>
+            </div>
+            <div class="col-4" style="height: auto;">
+                <img style="border: solid 5px black" src="images/WALLPAPER.webp" alt="Wallpaper" width="100%" height="350px">
+                <h3 style="text-align: center;">Proceso creativo</h3>
+            </div>
+        </div>
+        <div  class="row" >
+            <div style="background-image: url(images/portada2.jpg);" class="col-6 text-center">
+              <video src="video/puerco arana.mp4" controls width="100%" height="450px" style="border: solid 5px black;"></video>
+        </div>
+        <div style="background-color: lightblue;" class="col-6 text-center">
+          <h2 class="text-center"><u style="color: rgb(28, 1, 1);">PUERCO ARANA</u></h2>
+        <div>
+            <img src="images/marge.png" class="text-center" alt="Marge" width="50px">
+            <p style="font-size: x-large;">
+              <strong style="color: rgb(42, 42, 240);"><i>Marge pregunta:</i>
+                <br>
+              </strong> ¿Cómo es que llegaron huellas del puerco al techo?
+            </p>
+        </div>
+        <br>
+        <div>
+          <img src="images/homero.png" class="text-center" alt="homero">
+          <p style="font-size: x-large;" class="text-center">
+            <br>
+            <strong style="color: rgb(66, 66, 11);"><i>Homero responde:</i>
+              <br>
+            </strong> Puerco arana, puerco arana... al mal ataca con su telaraña, su colita retorcida, da besitos con su trompita... MIRAAAA es el puerco arana
+          </p>
+        </div>
+    </div>
+    <div style=" background-image: url(images/ICONO\ PERRITO.png);" class="row">
+      <div style="width: auto;" class="col-3">
+        <img src="images/1.gif" width="450px" style="padding: 5px;" alt="Bart">
+      </div>
+      <div class="col-3">
+        <img src="images/3.webp" width="450px" style="padding: 5px;" alt="Bart">
+      </div>
+      <div class="col-3">
+        <img src="images/2.webp" width="450px" style="padding: 5px;" alt="Bart">
+      </div>
+      <div class="col-3">
+        <img src="images/4.png" width="450px" style="padding: 5px;" alt="Bart">
+      </div>
+    </div>
+    <footer style="text-align: center; color: white;" class="col-12">
+      &copy;Los Simpsons
+  </footer>
+    <script>
+      function playSound(audioId){
+        var audio=document.getElementById(audioId);
+        audio.play();}
+    </script>
+  </body>
+</html>
